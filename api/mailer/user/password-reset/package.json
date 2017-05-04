@@ -1,0 +1,4 @@
+{
+  "name": "UserPasswordResetMailer",
+  "main": "password-reset.js"
+}

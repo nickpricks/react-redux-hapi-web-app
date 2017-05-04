@@ -1,0 +1,11 @@
+@import "~react-toolbox/lib/colors";
+
+$color-primary-dark: $color-black;
+$color-primary: $palette-yellow-400;
+$color-primary-contrast: $color-white;
+
+$progress-main-color: $color-primary !default;
+$progress-secondary-color: rgba($color-primary-contrast, 0.7) !default;
+
+
+$appbar-height: 80px;

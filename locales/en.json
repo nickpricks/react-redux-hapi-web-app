@@ -1,0 +1,54 @@
+{
+	"welcome": "Welcome Back",
+	"heart-beat": "ok",
+	"request": {
+		"error": "Unable to process request, please try later"
+	},
+	"auth": {
+		"jwt": {
+			"invalid": "Invalid bearer token",
+			"bad": "Bad HTTP authentication header format",
+			"badImplementation": "Bad credentials object received for jwt auth validation",
+			"missing": "Missing bearer token detail",
+			"expired": "Expired or wrong token"
+		},
+		"invalid": "Invalid auth token",
+		"expired": "User session is expired"
+	},
+	"db": {
+		"save": {
+			"failed": "Unable to save %s detail, please try later"
+		},
+		"user": {
+			"emailExists": "A user with same email already exists.",
+			"exists": "User already exists.",
+			"notExists": "db.user.notExists",
+			"inActive": "User not activated yet."
+		},
+		"notAvailable": "%s %s is not available",
+		"error": "Unable to perform operation on database. Please try later",
+		"notFound": "Unable to find any matching record",
+		"exists": "Already exists",
+		"invite": {
+			"exists": "Invitation already exists"
+		}
+	},
+	"validation": {
+		"required": {
+			"username": "Username is required",
+			"pwd": "Password is required",
+			"role": "Role is required"
+		},
+		"invalid": {
+			"role": "Role %s is not a valid role",
+			"username": "Invalid username.",
+			"usernamePwd": "Invalid username or password"
+		}
+	},
+	"func": {
+		"missingArg": "function %s was called with missing or invalid arg %s"
+	},
+	"function": {
+		"missingArg": "function.missingArg"
+	}
+}

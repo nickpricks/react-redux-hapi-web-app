@@ -1,0 +1,8 @@
+extends ../../layouts/default
+
+block content
+    h1 Please register yourself
+    br
+    p Hi #{model.name}
+    p You have been invited, Please follow the link to register yourself!
+    a(href="#{model.verifyLink}", target="_blank") Click To Register

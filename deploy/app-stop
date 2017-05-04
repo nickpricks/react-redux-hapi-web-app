@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PATH=$PATH:/usr/local/bin
+
+app_name=mag-web-app
+apps=($app_name-api $app_name-ui)
+
+for i in "${apps[@]}"
+do
+    if pm2 list | grep $i > /dev/null
+    then
+        pm2 delete $i
+    fi
+done

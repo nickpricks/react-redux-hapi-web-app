@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PATH=$PATH:/usr/local/bin
+
+user=ec2-user
+app_name=mag-web-app
+app_home=/home/$user/$app_name
+live_env=production
+stage_env=staging
+
+cd $app_home
+
+# read ENV:VAR
+. deploy/tags-env-vars
+
+if [ $NODE_ENV == $live_env ]
+then
+  pm2 start --name $app_name-api -u $user npm -- run start-prod-api
+  pm2 start --name $app_name-ui -u $user npm -- run start-prod
+fi
+
+if [ $NODE_ENV == $stage_env ]
+then
+  pm2 start --name $app_name-api -u $user npm -- run start-stage-api
+  pm2 start --name $app_name-ui -u $user npm -- run start-stage
+fi
+
+pm2 save

@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+PATH=$PATH:/usr/local/bin
+
+app_name=mag-web-app
+app_home=/home/ec2-user/$app_name
+
+echo "==> cd to $app_home"
+cd $app_home
+
+. deploy/tags-env-vars
+
+echo "==> install npm packages..."
+rm -rf ./node_modules
+yarn install --production
+
+
+echo "==> run db:migrate ===== TODO"
+#./node_modules/.bin/sequelize db:migrate
+
+#echo "==> run db:seed:all"
+#./node_modules/.bin/sequelize db:seed:all
+
+echo "*** Installed packages ***"

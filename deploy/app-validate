@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PATH=$PATH:/usr/local/bin
+
+app_name=mag-web-app
+
+#api=`pm2 list | grep $app_name-api | grep online -m 1 | awk '{print $10}'`
+#ui=`pm2 list | grep $app_name-ui | grep online -m 1 | awk '{print $10}'`
+
+#if [ $api ] && [ $ui ]
+#then
+    exit 0
+#else
+#    exit 1
+#fi
+

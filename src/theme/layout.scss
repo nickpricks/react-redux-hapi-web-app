@@ -1,0 +1,529 @@
+html, body {
+  height: 100%;
+}
+
+#content {
+  height: 100%;
+}
+
+.home_banner {
+  background: url("../../src/theme/images/home_bg.jpg") repeat;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $color-black;
+}
+
+.site_logo {
+  background: url("../../src/theme/images/mage_logo.png") no-repeat 0 0;
+  width: 220px;
+  height: 80px;
+  float: left;
+  margin: 5px 0;
+}
+
+header.main-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 0 $color-black;
+  display: inherit !important;
+  height: auto !important;
+  padding: 0 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  .header-top {
+    background-color: $color-black;
+    float: left;
+    width: 100%;
+    ul {
+      margin: 0;
+    }
+  }
+  .navbar.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+    .navbar-toggle {
+      top: 20px;
+      background-color: $color-gray-dark;
+      .icon-bar {
+        background-color: $color-white;
+      }
+    }
+    .navbar-nav {
+      li {
+        a {
+          padding: 35px 10px;
+          font-size: 20px;
+          color: $color-black;
+          &:hover, &:focus {
+            background-color: $color-yellow;
+          }
+        }
+        a.active {
+          background-color: $color-yellow;
+        }
+      }
+    }
+  }
+
+}
+.dateOfBirthDialog span{
+  color:#000 !important;
+}
+.dateOfBirthDialog span:after{
+  color:#000 !important;
+}
+.dateOfBirthDialog h3{
+  color:#000 !important;
+}
+.dateOfBirthDialog button{
+  color: #000 !important;
+}
+.banner-contant {
+  padding-top: 300px;
+  h1 {
+    font-size: 45px;
+    span {
+      background-color: $color-white;
+      padding:0 30px;
+    }
+    span.text-highlight {
+      background-color: $color-black;
+      color: $color-yellow;
+      margin-left: 60px;
+      padding: 0 30px;
+      margin-top: 8px;
+      float: left;
+    }
+  }
+}
+
+/*=======SINGIN====================*/
+.form-group {
+  position: relative;
+  .help-block {
+    color: $color-red !important;
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.form_bg {
+  background: url("../../src/theme/images/signin_bg.jpg") repeat;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $color-black;
+  padding-top: 7%;
+  padding-bottom: 4%;
+  .bg_black {
+    background-color: rgba(0, 0, 0, 0.8);
+    float: left;
+    width: 100%;
+    padding: 15px;
+    label {
+      color: $color-white;
+    }
+    .form-group {
+      position: relative;
+      input {
+        color: $color-white;
+        border: 1px solid $color-white;
+        padding: 0 15px;
+        height: 45px;
+        background-color: transparent;
+        border-radius: 0;
+      }
+    }
+    .has-error {
+      .form-control:focus {
+        border-color: $light-yellow;
+        box-shadow: inset 0 1px 1px $color-black, 0 0 6px #ffface;
+        box-shadow: inset 0 1px 1px $color-black, 0 0 6px #ffface;
+      }
+    }
+
+    p {
+      color: $color-white;
+    }
+  }
+  .signin-logo {
+    background: url(../../src/theme/images/mage_logo_big.png);
+    width: 310px;
+    height: 111px;
+    display: inline-block;
+    margin: 10px 0 30px;
+  }
+
+  .material-icons {
+    color: $color-white;
+  }
+  h1 {
+    font-size: 55px;
+    color: $color-yellow;
+    font-family: 'Playball-Regular';
+  }
+  h3 {
+    font-size: 30px;
+    color: $color-yellow;
+  }
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin: 30px 0;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
+
+.btn-submit {
+  font-size: 14px;
+  padding: 0 36px;
+  color: $color-black !important;
+  background: $color-yellow !important;
+  margin: 20px 0 40px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  &:before, &:after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    content: "";
+    background-color: $color-yellow;
+    transition-property: width, background-color;
+  }
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
+}
+
+/*=============================TABLE===============*/
+.mt40 {
+  margin-top: 40px !important;
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.table-custom {
+  box-shadow: 0px 0px 36px 4px #f1f1f1;
+  padding: 20px;
+  .table_head {
+    background-color: $table_head;
+    color: $color-white;
+  }
+  tr {
+    th, td {
+      padding: 14px 10px;
+      vertical-align: middle;
+      font-size: 14px;
+      input, input[type="text"], input[type="number"] input[type="number"], input[type="email"], input[type="password"], select {
+        height: 45px;
+        padding: 0 15px;
+      }
+    }
+
+  }
+}
+
+.custom-tabs {
+  &:focus {
+    outline: none;
+  }
+}
+
+.add_btn {
+  button {
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    span {
+      font-size: 36px !important;
+      color: $color-black;
+    }
+  }
+}
+
+/*===================================inner page banner============================================*/
+.inner-banner {
+  background: rgba(0, 0, 0, 0) url("../../src/theme/images/inner_bannerBg.jpg") no-repeat scroll 50% 0 / cover;
+  display: inline-block;
+  height: 680px;
+  width: 100%;
+}
+
+.welcome-text {
+  padding: 50px 0;
+  h1 {
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'roboto-Condensed-Bold';
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 24px;
+    font-family: 'RalewayRegular';
+  }
+}
+
+.bgGray {
+  background: $grayBg_color;
+  .text-Rregular {
+    font-family: 'roboto-regular';
+  }
+  .panel-default {
+    margin: 40px 0;
+    .panel-heading {
+      background-color: $color-black;
+      border-color: transparent;
+      color: $color-white;
+      font-family: 'roboto-regular';
+      padding: 10px 50px;
+      h4.panel-title {
+        font-size: 20px;
+        color: $color-white;
+        margin: 0;
+        a {
+          display: block;
+          padding: 5px 15px;
+          text-decoration: none;
+          color: $color-white;
+          i.fa {
+            font-size: 30px;
+            border-left: 1px solid $color-white;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+    .panel-body {
+      font-size: 20px;
+      font-weight: normal;
+      font-family: 'roboto-regular';
+      background-color: $color-gray-dark;
+      &:hover {
+        background-color: $color-gray-dark + 50%;
+        cursor: pointer;
+      }
+    }
+
+  }
+  h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-family: 'roboto-regular';
+    font-weight: normal;
+  }
+  .custom_form {
+    .help-block {
+      top: 10px;
+      right: 10px;
+    }
+    input[type="text"], input[type="number"], input[type="email"], input[type="password"], select {
+      height: 45px;
+      border-radius: 0;
+      width: 100%;
+      background-color: $color-white;
+      border: 1px solid $color-gray-dark;
+      padding: 0 15px;
+    }
+    select {
+      position: relative;
+    }
+    label {
+      width: 100%;
+      float: left;
+      font-size: 18px;
+      font-family: 'roboto-regular';
+      font-weight: normal;
+    }
+    h4 {
+      float: left;
+      width: 100%;
+      margin: 20px 0 0 0;
+      font-weight: 600;
+    }
+    span {
+      font-size: 16px;
+      line-height: 20px;
+      input {
+        font-weight: normal;
+        margin: 2px 10px;
+
+      }
+    }
+    textarea {
+      float: left;
+      width: 100%;
+      height: 90px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .spanW100 {
+      width: 100%;
+      float: left;
+      text-align: left;
+    }
+    .field___14tiU {
+      position: relative;
+      display: block;
+      white-space: inherit;
+      vertical-align: middle;
+    }
+    .black-btn {
+      background-color: $color-black;
+      padding: 8px 30px;
+      border-radius: 0;
+      color: $color-white;
+      margin: 20px 0;
+    }
+  }
+}
+
+.well {
+  position: relative;
+}
+
+.trash {
+  position: absolute;
+  right: 6px;
+  font-size: 18px;
+  top: 0px;
+  z-index: 10;
+  color: $color-red;
+}
+
+:focus {
+  outline: none;
+}
+/*===================================pager============================================*/
+
+.head-pagination {
+  float: right;
+  margin: 0;
+}
+
+.head-pagination li {
+  float: left;
+}
+
+.head-pagination li p {
+  font-size: 12px;
+  color: #373837;
+  margin-top: 8px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.head-pagination li select {
+  height: 34px !important;
+  border-radius: 0;
+  width: 84px;
+  border: 1px solid #e0e0e0;
+  color: #373837;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+
+.head-pagination li button {
+  margin-bottom: 5px;
+}
+
+.page-link {
+  border-radius: 0;
+  color: #424242;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.head-pagination li .btn-next.page-link, .head-pagination li .btn-prev.page-link {
+  height: 34px;
+  color: #373837;
+  padding: 5px 14px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.head-pagination li .btn-next.page-link:hover, .head-pagination li .btn-prev.page-link:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*===============================@media css============================*/
+@media (max-width: 1030px) {
+  .form_bg{
+    height: auto;
+  }
+  .inner-banner {
+    height: 400px;
+  }
+  .bgGray {
+    .custome_form {
+      label {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .inner-banner {
+    height: 340px;
+  }
+  header.main-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    .navbar.navbar-default {
+      .navbar-nav {
+        li {
+          a {
+            padding: 35px 10px;
+            font-size: 16px;
+          }
+
+        }
+      }
+    }
+  }
+  .inner-banner {
+    height: 340px;
+  }
+
+}
+
+@media (max-width:776px) {
+  .pull-left.txt-center , .pull-right.txt-center{
+    float: inherit !important;
+  }
+
+}
